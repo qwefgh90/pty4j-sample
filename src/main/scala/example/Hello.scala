@@ -5,7 +5,8 @@ import com.pty4j.{PtyProcessBuilder, PtyProcess}
 object Hello extends Greeting with App {
   println(greeting)
   // The command to run in a PTY...
-  val cmd = Array( """C:\Program Files\Java\jdk-9.0.1\bin\jshell.exe""" );
+  val cmd = Array("""/usr/java/jdk-9.0.4/bin/jshell""")
+// """C:\Program Files\Java\jdk-9.0.1\bin\jshell.exe""" );
   // The initial environment to pass to the PTY child process...
   val env = Array[String]()//"TERM=xterm" );
   val envs = new java.util.HashMap[String, String](System.getenv());

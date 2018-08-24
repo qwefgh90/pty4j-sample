@@ -10,6 +10,7 @@ lazy val root = (project in file(".")).
     name := "pty-sample",
     libraryDependencies += scalaTest % Test,
     libraryDependencies += "org.jetbrains.intellij.deps" % "pty4j" % "0.7.5" exclude("null", "purejavacomm"),
-    libraryDependencies += "com.github.purejavacomm" % "purejavacomm" % "1.0.2.RELEASE"
+//    libraryDependencies += "com.github.purejavacomm" % "purejavacomm" % "1.0.2.RELEASE",
+    unmanagedBase := baseDirectory.value / "lib"
   )
 resolvers += Resolver.bintrayRepo("jetbrains", "intellij-third-party-dependencies") 
